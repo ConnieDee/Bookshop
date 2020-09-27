@@ -1,14 +1,10 @@
-/*for bookshop*/
-      /* Extra small devices (phones, 600px and down) */
+/*Bookshop CSS*/
         @media only screen and (max-width: 600px) {}
 
-        /* Small devices (portrait tablets and large phones, 600px and up) */
         @media only screen and (min-width: 600px) {}
 
-        /* Medium devices (landscape tablets, 768px and up) */
         @media only screen and (min-width: 768px) {}
 
-        /* Large devices (laptops/desktops, 992px and up) */
         @media only screen and (min-width: 992px) {
             .container {
                 width: 50%;
@@ -16,147 +12,188 @@
             }
         }
 
-        /* Extra large devices (large laptops and desktops, 1200px and up) */
         @media only screen and (min-width: 1200px) {}
        
-        * {
-            box-sizing: border-box;
-            }
-            .searchBar form {
-            width: 100%;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #dbdbdb;
-            }
-            .searchBar input[type=text] {
-            border-radius: 5px;
-            padding: 5px 10px;
-            color: #000;
-            font-size: 1.3em;
-            border: 2px solid #9e9e9e;
-            width: 80%;
-            margin-right: 5px;
-            }
-       * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+nav {font-family: 'Courier New', Courier, monospace; 
+    font-color: white;
+    font-size: 1.2em;
+    text-align: left
+    }
+    a:link {
+        color: rgb(255, 255, 255);
+        text-decoration: none
+    }
+    a:visited {
+        color: rgb(255, 255, 255);
+        text-decoration: none
+    }
+    a:hover {
+        color: rgb(247, 68, 122);
+        text-decoration: none
+    }
+    a:active {
+        color: #faa94d;
+        text-decoration: none
+    }
 
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            line-height: 1.4;
-            background-color: teal;
-        }
+* {
+box-sizing: border-box;
+    }
+            
+.searchBar form {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dbdbdb;
+    }
 
-        a {
-            color: #333;
-            text-decoration: none;
-        }
+.searchBar input[type=text] {
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #000;
+    font-size: 1.3em;
+    border: 2px solid #9e9e9e;
+    width: 80%;
+    margin-right: 5px;
+    }
 
-        .container {
-            width: 100%;
-        }
-        h1 {
-            font-size: 48pt;
-            font-family: book antiqua;
-        }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
 
-        .header h1,
-        .header .breadcrumb {
-            text-align: center;
-        }
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.4;
+    background-color: teal;
+    }
 
-        /* Books */
-        .book {
-            margin-top: 5px;
-            margin-bottom: 15px;
-            border-bottom: 1px solid rgb(209, 209, 209);
-            display: flex;
-        }
+a {
+    color: #333;
+    text-decoration: none;
+    }
 
-        .book,
-        .page,
-        .list {
-            padding: 5px 10px;
-            max-width: q;
-        }
+.container {
+    width: 100%;
+    }
 
-        .book .div {
-            padding-left: 10px;
-        }
+h1 {
+    font-size: 48pt;
+    font-family: 'Courier New', Courier, monospace;
+    }
+
+.bookcase {
+    border: none;
+    background-color: transparent;
+    font-size: 1.2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header h1,
+.header .breadcrumb {
+    text-align: center;
+    }
+
+/* Books */
+.book {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid rgb(209, 209, 209);
+    display: flex;
+    }
+
+.book,
+.page,
+.list {
+    padding: 5px 10px;
+    max-width: q;
+    }
+
+.book .div {
+    padding-left: 10px;
+    }
 
 
-        .book .article {
-            padding-left: 10px;
-        }
+.book .article {
+    padding-left: 10px;
+    }
 
-        .book .h2 {
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
-        }
+.book .h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    }
 
-        .book .author {
-            color: rgb(230, 230, 230);
-            font-weight: bold;
-        }
+.book .author {
+    color: rgb(230, 230, 230);
+    font-weight: bold;
+    }
 
-        .book .price {
-            font-size: 1.2em;
-            font-weight: bold;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
+.book .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    }
 
-        .book .addbtn,
-        .searchBar input[type=submit] {
-            padding: 8px 10px;
-            border: 0px;
-            border-radius: 5px;
-            min-width: 80px;
-            color: #fff;
-            float: right;
-            font-size: 1.1em;
-        }
+img {
+    border-radius: 20px;
+    padding: 10px;
+}
 
-        .book .addbtn {
-            background-color: rgba(70, 23, 201, 0.829);
-            float: right;
-            position: relative;
-        }
+img:hover {
+    opacity: 0.5;
+}
 
-        .book .removebtn {
-            padding: 8px 10px;
-            border: 0px;
-            border-radius: 5px;
-            min-width: 80px;
-            color: #fff;
-            float: right;
-            font-size: 1.1em;
-            font-weight: bold;
-            background-color: #f01e4c;
-        }
+.book .addbtn,
+.searchBar input[type=submit] {
+    padding: 8px 10px;
+    border: 0px;
+    border-radius: 5px;
+    min-width: 80px;
+    color: #fff;
+    float: right;
+    font-size: 1.1em;
+    }
 
-        .searchBar {
-            text-align: center;
-        }
+.book .addbtn {
+    background-color: rgba(70, 23, 201, 0.829);
+    float: right;
+    position: relative;
+    }
 
-        .searchBar form {
-            width: 100%;
-            padding-bottom: 20px;
-            border-bottom: 1px solid #dbdbdb;
-        }
+.book .removebtn {
+    padding: 8px 10px;
+    border: 0px;
+    border-radius: 5px;
+    min-width: 80px;
+    color: #fff;
+    float: right;
+    font-size: 1.1em;
+    font-weight: bold;
+    background-color: #f01e4c;
+    }
 
-        .searchBar input[type=text] {
-            border-radius: 5px;
-            padding: 5px 10px;
-            color: #000;
-            font-size: 1.3em;
-            border: 2px solid #9e9e9e;
-            width: 80%;
-            margin-right: 5px;
-        }
+.searchBar {
+    text-align: center;
+    }
 
-        .searchBar input[type=submit] {
-            background-color: rgb(15, 107, 247);
-            width: 15%;
-            margin-right: 5px;
-        }
+.searchBar form {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dbdbdb;
+    }
+
+.searchBar input[type=text] {
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #000;
+    font-size: 1.3em;
+    border: 2px solid #9e9e9e;
+    width: 80%;
+    margin-right: 5px;
+    }
+
+.searchBar input[type=submit] {
+    background-color: rgb(15, 107, 247);
+     width: 15%;
+    margin-right: 5px;
+    }
     
